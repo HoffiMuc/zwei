@@ -5,7 +5,7 @@ import org.springframework.messaging.SubscribableChannel;
 
 public interface ZweiSink {
 
-    String INPUT = "zweiInputDef";
+    String INPUT = "einsOutputDef";
 
     @Input(INPUT)
     SubscribableChannel zweiInput();
