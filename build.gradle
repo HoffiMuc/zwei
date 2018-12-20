@@ -71,7 +71,7 @@ docker network create mynetwork
 docker run -d -p 5672:5672 -p 15672:15672 --network mynetwork --hostname my-rabbit --name some-rabbit rabbitmq:3.7.8-management-alpine
 
 # ${project.name}
-docker run -d -p 8081:8080                --network mynetwork --hostname eins      --name funke-${project.name} ${project.dockerhubUser}funke${project.name}:${project.versionBase}
+docker run -d -p 8082:8080                --network mynetwork --hostname eins      --name funke-${project.name} ${project.dockerhubUser}funke${project.name}:${project.versionBase}
 
 """
         println dockerRunCmdsString
