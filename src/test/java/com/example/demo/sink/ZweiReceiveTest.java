@@ -33,7 +33,7 @@ public class ZweiReceiveTest {
         this.channel.zweiInput().send(message);
 
         verify(zweiReceive).zweiReceive(anyString(), any());
-        assertEquals("Testmessage ==> premodified", zweiReceive.lastMessage);
+        assertEquals("Testmessage ==> premodified", ZweiReceive.lastMessage);
 
     }
 }
